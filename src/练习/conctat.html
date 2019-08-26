@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // concat('red', 'pink', 'green')
+        // var str = 'andy'
+        // console.log(str.concat('red', 'pink', 'abc'));
+
+
+
+        // 数组排序
+        // var arr = [1, 2, 3, 4, 5, , 12, 5, 8, 46, 5, 4, 5];
+        // arr.sort(function(a, b) {
+        //     // return a - b //升序
+        //     return b - a //降序
+        // });
+        // console.log(arr);
+
+
+
+
+        // 翻转数组
+        // var arr = [1, 23, 5, 6, 788, 9, 7]
+        // arr.reverse();
+        // console.log(arr);
+
+
+        // 检测是否为数组  instanceof
+        // var arr = [1, 23, 5]
+        // var obj = {}
+        // console.log(arr instanceof Array);
+        // console.log(obj instanceof Array);
+
+        // 随机数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        for (var i = 0; i < 5; i++) {
+            var abc = getRandom(1, 10)
+            console.log(abc);
+        }
+    </script>
+</body>
+
+</html>

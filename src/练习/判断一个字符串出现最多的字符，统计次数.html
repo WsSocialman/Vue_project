@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = 'aahhfdbvdvbckkkkkkkkkkkkkkkkkkkkkkkkkhvcvwghddbiuwhcbdbc'
+        var abc = {};
+        for (var i = 0; i < str.length; i++) {
+            if (!abc[str.charAt(i)]) {
+                abc[str.charAt(i)] = 1;
+            } else {
+                abc[str.charAt(i)]++;
+            }
+        }
+        var iMax = 0;
+        var iIndex = '';
+        for (var i in abc) {    
+            if (abc[i] > iMax) {        
+                iMax = abc[i];        
+                iIndex = i;    
+            }
+        }
+        console.log(iMax, iIndex);
+    </script>
+</body>
+
+</html>
